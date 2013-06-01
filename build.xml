@@ -4,9 +4,9 @@
 
 	
 	<target name="-after-build">
-		<delete dir="${build.dir}/android/assets/www" />
+		<delete dir="${build.dir}/ios/www" />
 
-		<copy todir="${build.dir}/android/assets/www">
+		<copy todir="${build.dir}/ios/www">
            	<fileset dir="${build.dir}/package"/>
 		</copy>
 	</target>
